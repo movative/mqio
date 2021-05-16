@@ -43,15 +43,6 @@ docker build -t "mqio:v1" .
 docker container run --name mqio --device /dev/gpiomem -d mqio:v1
 ```
 
-4. Execute it via Google Home
-
-```python
-* Google Assistant --> IFTTT
-* IFTTT --> OpenHab
-* OpenHab --> MQTT
-* MQTT --> LED
-```
-
 ## Author
 
 **Alexander Hartmann** - [movative](https://github.com/movative)
