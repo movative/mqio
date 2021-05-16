@@ -1,0 +1,5 @@
+FROM arm32v7/python:3.7.4-buster
+LABEL maintainer="38313840+movative@users.noreply.github.com"
+COPY test-mqtt.py ./
+RUN pip install --no-cache-dir rpi.gpio paho-mqtt
+CMD ["python", "./test-mqtt.py"]
